@@ -29,7 +29,7 @@ export const ArticleParamsForm = ({
 	setAppPageStyles,
 }: ArticleParamsFormProps) => {
 	const [openSetting, setOpenSetting] = useState(false);
-	const settingRef = useRef<HTMLDivElement>(null);
+	const settingRef = useRef<HTMLDivElement | null>(null);
 	const [fontFamily, setFontFamily] = useState(appPageStyles.fontFamilyOption);
 	const [fontSize, setFontSize] = useState(appPageStyles.fontSizeOption);
 	const [fontColor, setFontColor] = useState(appPageStyles.fontColor);

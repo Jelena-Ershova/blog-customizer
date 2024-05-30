@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 export const useOutsideClick = (
-	ref: React.RefObject<HTMLDivElement>,
+	ref: React.RefObject<HTMLDivElement | null>,
 	callback: () => void,
 	state: boolean
 ) => {
@@ -19,5 +19,5 @@ export const useOutsideClick = (
 				document.removeEventListener('mouseup', handleClickOutside);
 			};
 		}
-	});
+	}, [callback, state]);
 };

@@ -1,11 +1,15 @@
 .container {
+	display: grid;
 	position: fixed;
 	left: 0;
 	width: 616px;
 	height: 100%;
-	overflow-y: scroll;
+	overflow: auto;
 	transform: translate(-616px);
 	transition: transform 0.5s ease;
+	background-color: #ffffff;
+	border-right: 1px solid #000000;
+	scrollbar-gutter: stable;
 }
 
 .container_open {
@@ -18,12 +22,10 @@
 	flex-direction: column;
 	gap: 50px;
 	box-sizing: border-box;
-	width: 599px;
+	width: 100%;
 	height: auto;
 	min-height: 100%;
 	padding: 50px 31px;
-	background-color: #ffffff;
-	border-right: 1px solid #000000;
 }
 
 .bottomContainer {
